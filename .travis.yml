@@ -31,4 +31,4 @@ deploy:
   on:
     repo: loaded02/ICF_Report
     branch: master
-    #tags: true
+    tags: true #comment this line out if you want to deploy on github
