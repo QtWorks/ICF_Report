@@ -24,15 +24,21 @@ GUI_PrintWindow::~GUI_PrintWindow()
 
 void GUI_PrintWindow::accept()
 {
-    QPrinter printer;
+    QPrinter printer(QPrinter::HighResolution);
     printer.setOutputFileName("report.pdf");
+    printer.setPrinterName("");
     printer.setOutputFormat(QPrinter::PdfFormat);
     printer.setPaperSize(QPrinter::A4);
-    QPrintDialog printDialog(&printer, this);
-    printDialog.setWindowTitle(tr("Print Document"));
-    if (printDialog.exec() == QDialog::Accepted) {
+    printer.setPageSize(QPrinter::A4);
+    printer.setOrientation(QPrinter::Portrait);
+    printer.setFullPage(true);
+    printer.setPageMargins (0,0,0,0,QPrinter::Millimeter);
+//    QPrintDialog printDialog(&printer, this);
+//    printDialog.setOptions(QAbstractPrintDialog::PrintShowPageSize | QAbstractPrintDialog::PrintToFile);
+//    printDialog.setWindowTitle(tr("Print Document"));
+//    if (printDialog.exec() == QDialog::Accepted) {
         ui->webView->print(&printer);
-    }
+//    }
     QDialog::accept();
 }
 

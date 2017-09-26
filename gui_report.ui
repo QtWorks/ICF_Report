@@ -28,7 +28,7 @@
         <x>0</x>
         <y>0</y>
         <width>870</width>
-        <height>725</height>
+        <height>730</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -294,7 +294,14 @@
         </layout>
        </item>
        <item>
-        <widget class="QTextEdit" name="textEdit"/>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>288</height>
+          </size>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>

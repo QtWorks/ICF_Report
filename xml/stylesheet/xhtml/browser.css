@@ -15,6 +15,7 @@ body {
 
 div.main {
    width: 19cm;
+   margin: 0 1cm;
 }
 
 h1 {
@@ -34,7 +35,7 @@ p.sig {
 
 p.desc {
     font-size: 70%;
-}    
+}
 
 table.header {
     margin-bottom: 15px;
@@ -95,7 +96,7 @@ table.tbl td {
     border-collapse:collapse;
     text-align:center;
     background-color:#FFFFFF;
-} 
+}
 
 table.tbl td.left {
     padding: 0 0 0 10px;
@@ -106,7 +107,7 @@ table.tbl td.left {
     border-collapse:collapse;
     text-align:left;
     background-color:#FFFFFF;
-} 
+}
 
 table.tbl td.part {
     line-height:1.2;
