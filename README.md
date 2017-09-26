@@ -1,4 +1,5 @@
-# ICF_Report [![Build Status](https://travis-ci.org/loaded02/ICF_Report.svg?branch=master)](https://travis-ci.org/loaded02/ICF_Report)
+# ICF_Report 
+[![Build Status](https://travis-ci.org/loaded02/ICF_Report.svg?branch=master)](https://travis-ci.org/loaded02/ICF_Report)
 
 This is a simple GUI-Programm, which is supposed to help creating a brief ICF Report.
  The ICF Report is used to describe a patient status, e.g. during a medical therapy. 
@@ -23,3 +24,16 @@ Check [WHO](http://www.who.int/classifications/icf/en/) for more information abo
   3. cd build
   4. qmake ../ICF_Report.pro -r -spec linux-g++
   5. make
+
+## SCREENSHOTS:
+Menu
+
+![Menu](https://github.com/loaded02/ICF_Report/raw/master/doc/screenshot_1.png)
+
+Create Report
+
+![Report](https://github.com/loaded02/ICF_Report/raw/master/doc/screenshot_2.png)
+
+Generate Pdf
+
+![Pdf](https://github.com/loaded02/ICF_Report/raw/master/doc/screenshot_3.png)
